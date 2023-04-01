@@ -1,425 +1,133 @@
-<!DOCTYPE>
-<html>
-<head lang="en">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<title> Water Luv </title>
-</div>
-</head>
-
-<style>
-body {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 15em;
-  margin-right: 0;
-} 
-p.c {
-  margin-left: 15em;
- }
-div.a {
-  text-indent: 20px;
-}
-.bigHr {
-    background-color: black !important;
-    color: black !important;
-    border: solid 2px black !important;
-    height: px !important;
-    width:1200px !important;
-}
-form {
-  display: block;
-  margin-left: 400px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove (internal value);
-}
-div.b{
-margin-left:900px;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 11;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-body {
-  font-family: "Lato", sans-serif;
-}
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}body {
-  font-family: "Lato", sans-serif;
-}
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-left: 20000px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style> 
-<br />
-<br />
-<br />
-<body align="left" style=background-image:url("wall.jpg")>
-<center>
-<image class="a" align="center" src="logo.png" alt="waterluv logo" width="110px" height="110px" border="1">
-</center>
-<br />
-<header>
-	<p align="center"><font face="Segoe UI"><font color="#02314D"><b><font size="10"> WATER LUV</font></font></font></p></b>
-</header>
-<br />
-<nav>
-<center>
-<div class="sidenav">
-  <a href="Mainpage.html">About Us </a>
-  <a href="ProdnServ.html">Products and Services</a>
-    <a href="Gallery.html">Gallery</a>
-  <button class="dropdown-btn">Contact Us
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="Apply.html">Apply Now</a>
-    <a href="Contact.html">Get in touch </a>
-<hr class="bigHr">
-</nav>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
-</center>
-<hr class="bigHr">
-
-</nav>
-<section>
-<br />
-<br />
-	<p align="center"><font face="copperplate"><b><font color="Black"><font size="6">ABOUT US</a></font></font></font></p></b>
-	<br />
-	<br />
-	<div class="a">
-	<p align="center"><font face="copperplate"><b><u><font color="black"><font size="6">Who we are</a></font></font></font></p></b></u>
-<p align="center"> <font style="verdana"><font size="5">Water Luv is a water refilling company servicing consumers with clean and safe drinking water through quality purification process. Water Luv has been the forefront of innovation. Our technology have helped shape the history of the water refilling industry. Water Luv is now an industry leader servicing consumers with clean and safe drinking water. It is still growing and developing with accelerated growth and has gained the respect of the community it serves.</font></font></p>
-
-
-</div>
-<br />
-<br />
-<div class="a">
-	<p align="center"><font face="copperplate"><u><b><font color="Black"><font size="6">Vision</a></font></font></font></p></b></u>
-<p align="center"> <font style="verdana"><font size="5">To be the market leader in the water refilling industry in terms of water quality and customer service.</font></font></p>
-</div>
-<br />
-<br />
-<div class="a">
-<p align="center"><font face="copperplate"><b><u><font color="Black"><font size="6">Mission</a></font></font></font></p></b></u>
-  <p align="center"> <font style="verdana"><font size="5">To provide clean and safe drinking water to people from all walks of life.</font></font></p>
-<br />
-</div>
-<br />
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="about3.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="about2.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="about1.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="about4.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="about5.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-</div>
-<br />
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 1000); // Change image every 2 seconds
-}
-</script>
-<br />
-<hr />
-<p align="center"><font face="courier new"><b><font color="red"><font size="4">Call us at (02)8997-2927 or e-mail us at <a href="mailto:waterluv18@gmail.com">
-waterluv18@gmail.com</a> for more information or delivery.</font></font></font></p></b>
-</section>
-<hr />
-<footer>
- <font size="4"> @WaterLuv, All Rights Reserved </font>
-</footer>
-</body>
-</body>
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="MissionTo provide clean and safe drinking water to people from all walks of life., VisionTo be the market leader in the water refilling industry in terms of water quality and customer service.">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>About Us</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="About-Us.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.15.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html",
+		"logo": "images/Maroon_Circle_Political_Logo-removebg-preview-removebg-preview.png"
+}</script>
+    <meta property="og:title" content="About Us">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body u-overlap u-overlap-transparent"><header class="u-clearfix u-header u-image u-header" id="sec-1320" data-image-width="516" data-image-height="333"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+          <img src="images/Maroon_Circle_Political_Logo-removebg-preview-removebg-preview.png" class="u-logo-image u-logo-image-1" data-image-width="101">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-montserrat u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-4 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="#" style="padding: 4px 6px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-4 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="About-Us.html" style="padding: 4px 6px;">About Us</a>
+</li><li class="u-nav-item"><a class="u-border-4 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="#" style="padding: 4px 6px;">Products and Services</a>
+</li><li class="u-nav-item"><a class="u-border-4 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="#" style="padding: 4px 6px;">Orders</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 4px 6px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About-Us.html" style="padding: 4px 6px;">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 4px 6px;">Products and Services</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 4px 6px;">Orders</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <a href="#" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-hover-white u-none u-radius-6 u-text-hover-black u-text-white u-btn-1">Login</a>
+      </div></header>
+    <section class="u-align-left u-clearfix u-image u-section-1" id="sec-d761" data-image-width="516" data-image-height="333">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h3 style="text-align: center;">
+            <span style="line-height: 2.0;">
+              <span class="u-custom-font u-font-montserrat" style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase;">Mission</span>
+            </span>
+            <span style="font-size: 1.25rem;">
+              <span class="u-custom-font u-font-montserrat">
+                <br>To provide clean and safe drinking water to people from all walks of life.&nbsp;
+              </span>
+            </span>
+          </h3>
+          <h3 style="text-align: center;">
+            <span style="font-size: 1.25rem;">
+              <span class="u-custom-font u-font-montserrat">
+                <span style="line-height: 2; font-weight: 700; text-transform: uppercase;">Vision</span>
+                <br>
+              </span>
+              <span class="u-custom-font u-font-montserrat">To be the market leader in the water refilling industry in terms of water quality and customer service.</span>
+              <br>
+            </span>
+          </h3>
+        </div>
+        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-align-justify u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-2"> Water Luv is a water refilling company servicing consumers with clean and safe drinking water through quality purification process. Water Luv has been the forefront of innovation. Our technology have helped shape the history of the water refilling industry. Water Luv is now an industry leader servicing consumers with clean and safe drinking water. It is still growing and developing with accelerated growth and has gained the respect of the community it serves.<br>
+          <br>Water Luv is proud to utilize nanotechnology in our water purification systems. By incorporating the three steps of nanofiltration, nanoparticles, and photocatalysis, we are able to provide our customers with the highest quality water possible. Our use of nanoscale membranes ensures that impurities such as bacteria, viruses, and pollutants are effectively removed from the water. Additionally, we engineer our nanoparticles to target specific pollutants and utilize photocatalysis to break down contaminants into harmless byproducts. By leveraging nanotechnology, Water Luv is able to provide a reliable and effective solution for water purification, meeting the needs of our customers and promoting growth in the industry.<br>
+          <br>
+        </p>
+        <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+          <div class="u-gallery-inner u-gallery-inner-1">
+            <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item u-shape-rectangle">
+              <div class="u-back-slide" data-image-width="1080" data-image-height="1080">
+                <img class="u-back-image u-expanded" src="images/services1.jpg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item u-shape-rectangle">
+              <div class="u-back-slide" data-image-width="1080" data-image-height="1080">
+                <img class="u-back-image u-expanded" src="images/about1.jpg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item u-shape-rectangle">
+              <div class="u-back-slide" data-image-width="1080" data-image-height="1080">
+                <img class="u-back-image u-expanded" src="images/services4.jpg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </body>
 </html>
