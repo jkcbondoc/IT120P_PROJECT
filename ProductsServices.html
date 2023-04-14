@@ -1,434 +1,75 @@
-<!DOCTYPE>
-<html>
-<head lang="en">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<title> Water Luv </title>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial scale =1.0">
+    <title>Water Luv | Products and Services</title>
+    <link rel="stylesheet" href="ProductsServicesStyle.css")>
 </head>
 
-<style>
-body {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 15em;
-  margin-right: 0;
-} 
-p.c {
-  margin-left: 15em;
- }
-div.a {
-  text-indent: 20px;
-}
-.bigHr {
-    background-color: black !important;
-    color: black !important;
-    border: solid 2px black !important;
-    height: px !important;
-    width:1200px !important;
-}
-form {
-  display: block;
-  margin-left: 400px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove (internal value);
-}
-div.b{
-margin-left:900px;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
+<body>
+    <header>
+    <image align="left" src="logo.png" alt="waterluv logo" width="95px" height="95px" border="0">
+    <nav class="navigation">
+        <a href="About-Us.html">About Us</a>
+        <a href="ProductsServices.html">Products and Services</a>
+        <a href="Orders.html">Orders</a>
+        <a href="Login.html">Login</a>
+    </nav>
+    </header>
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+    <section>
+  	<br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="a">
+    <p align="center"><font face="courier new"><b><u><font color="Black"><font size="6">Products</a></font></font></font></p></b></u>
+    <br />
+    <center>
+        <h2>Alkaline Water</h2>
+    <img width="200" height="180" src="alkaline.png">
+    <p><b><i>Description:</b></i> This type of water has a higher pH level than tap water, which some people believe</p>
+        <br />
+        <h2>Mineral Water</h2>
+    <img width="200" height="180" src="mineral.png">
+    <p><b><i>Description: </b></i> This type of water comes from a natural spring or well and contains  </p>
+    <p>naturally occurring minerals like calcium, magnesium, and potassium. </p>
+       <br />
+        <h2>Purified Water</h2>
+    <img width="200" height="180" src="purified.png">
+    <p><b><i>Description:</b></i> This type of water has gone through a filtration process to remove impurities,</p>
+    <p> such as chemicals and bacteria, to make it safe for drinking.</p>
+    </center>
+    	<br />
+    	</div>
+      <center>
+    <div class="a">
+    <p align="center"><font face="courier new"><b><u><font color="Black"><font size="6">Services</a></font></font></font></p></b></u>
+    	<br />
+        <h2>Water Refilling</h2>
+    <img width="200" height="180" src="refil.png">
+        <p><b><i>Description:</b></i> We offer water refilling services for customers who want to refill </p>
+    	<p>their water bottles with our high-quality water.</p>
+        <br />
+        <h2>Delivery Services</h2>
+    <img width="200" height="180" src="delivery.png">
+        <p><b><i>Description:</b></i> We offer delivery services for customers who want to receive</p>
+    	<p>our water directly to their doorstep.</p>
+        <br />
+        <h2>Water Analysis</h2>
+    <img width="200" height="180" src="analysis.png">
+        <p><b><i>Description:</b></i> We offer water analysis services to help customers determine the quality </p>
+    	<p>of their water and identify any potential contaminants.</p>
+    	</center>
+    	<br />
+  </section>
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 11;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-body {
-  font-family: "Lato", sans-serif;
-}
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}body {
-  font-family: "Lato", sans-serif;
-}
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-left: 20000px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-</style> 
-<br />
-<br />
-<br />
-<body align="left" style=background-image:url("wall.jpg")>
-<center>
-<image class="a" align="center" src="logo.png" alt="waterluv logo" width="110px" height="110px" border="1">
-</center>
-<br />
-<header>
-	<p align="center"><font face="Segoe UI"><font color="#02314D"><b><font size="10"> WATER LUV</font></font></font></p></b>
-</header>
-<br />
-<nav>
-<hr class="bigHr">
-<center>
-<div class="sidenav">
-  <a href="Mainpage.html">About Us </a>
-  <a href="ProdnServ.html">Products and Services</a>
-    <a href="Gallery.html">Gallery</a>
-  <button class="dropdown-btn">Contact Us
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="Apply.html">Apply Now</a>
-    <a href="Contact.html">Get in touch </a>
-<hr class="bigHr">
-</nav>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
-<br /> 
-<br />
-<section>
-	<p align="center"><font face="copperplate"><b><font color="Black"><font size="6">PRODUCTS AND SERVICES</a></font></font></font></p></b>
-<br /> 
-<br />
-<br /><p align="left"><font face="courier new"><b><u><font color="Black"><font size="6">Products<a></font></font></font></p></b></u>
-<center>
-<img src="imagemap.gif" width=500 height=500 alt=floorplan usemap="#floorplan"><img width="300" height="300" src="bottle.gif">
-</center>
-<map name="floorplan">
-
-<area shape=rect coords="11,215,174,428" href="alkaline.html">
-<area shape=rect coords="176,213,316,433" href="purified.html">
-<area shape=rect coords="342,177,570,670" href="mineral.html">
-</map> 
-<br />
-<table align="center" style=width:700px border="5" cellpadding="2" bordercolor="#8caad1"style="font-family:verdana;color:black;font-size:15px;">
-<br />
-   <tr><td>Mineral</TD><TD>₱25</TD></TR>
-   <tr><td>Purified</TD><TD>₱40</TD></TR>
-    <tr><td>Alkaline</TD><TD>₱50</TD></TR>
-  </table>
- <br />
-	<p align="left"><font face="courier new"><b><u><font color="Black"><font size="6">Services</a></font></font></font></p></b></u>
-	<br />
-<ul>
-  <li><font size="5">Testing and analyzing of clients in-house water supplies for the presence of bacteria, fungi, organic and inorganic compounds, taste and odor.</li></font>
-  <br />
-  <li><font size="5">Installation of the optimal water treatment and purification systems based on the client’s informed, educated and affordable choice.</li></font>
-  <br />
-  <li><font size="5">Routine monitoring of installed components to minimize equipment failure and ensure timely replacement of expired filters and components.</li></font>
-  <br />
-</ul>  
-</div class"d">
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="services1.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="services2.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="services3.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="services4.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="services5.jpg" style="width:100%">
-  <div class="text"></div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-</div>
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 1000); // Change image every 2 seconds
-}
-</script>
-<br />
-<hr />
-<p align="center"><font face="courier new"><b><font color="red"><font size="4">Call us at (02)8997-2927 or e-mail us at <a href="mailto:waterluv18@gmail.com">
-waterluv18@gmail.com</a> for more information or delivery.</font></font></font></p></b>
-</section>
-<hr />
-<footer>
- <font size="4"> @WaterLuv, All Rights Reserved </font>
-</footer>
-
-
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
